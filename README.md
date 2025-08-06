@@ -34,26 +34,30 @@ Follow these simple steps to get the Quiz-Organizer running on your local machin
 ### **Installation**
 
 1.  **Clone the repository:**
-    bash -
+    ```bash
     git clone [https://github.com/gopi-5/Quiz-Organizer.git](https://github.com/gopi-5/Quiz-Organizer.git)
     cd Quiz-Organizer
+    ```
     
 2.  **Install backend dependencies:**
     Navigate into the `server` directory and install the necessary packages.
-    bash -
+    ```bash
     cd server
     npm install
+    ```
     
 3.  **Install frontend dependencies:**
     Navigate into the `my-app` directory and install the necessary packages.
-    bash -
+    ```bash
     cd ../my-app
     npm install
+    ```
 
-4.  **Configure your .env file:**
-    In the server folder, create a .env file and add your MongoDB connection string.
-    env -
+4.  **Configure your `.env` file:**
+    In the `server` folder, create a `.env` file and add your MongoDB connection string.
+    ```env
     MONGO_URI=your_mongodb_connection_string_here
+    ```
 
 ### **Running the Application**
 
