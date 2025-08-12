@@ -1,31 +1,28 @@
 import './App.css';
 
 import './index.css'
-import React, {useState} from 'react'
+import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Signup from './Signup';
 import Login from './Login';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './Home';
 import Organise from "./Organise";
-// import Register from './Register';
+import Register from './Register';
 import Find from './Find';
 
 function App() {
-  
   return (
-    
-    <BrowserRouter> 
+    <BrowserRouter>
       <Routes>
         <Route path='/' element={<Signup/>}></Route>
         <Route path='/login' element={<Login/>}></Route>
         <Route path="/home" element={<Home />} /> 
         <Route path="/organise" element={<Organise />} />
-        {/* <Route path="/register" element={<Register />} /> */}
+        <Route path="/register" element={<Register />} />
         <Route path="/find" element={<Find />} />
       </Routes>
     </BrowserRouter>
-    
   );
 }
 

@@ -4,37 +4,27 @@ import { Link } from 'react-router-dom';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 function Login() {
-    
-    const [email, setEmail] = useState()
-    const [password, setPassword] = useState()
+    const [email, setEmail] = useState('')
+    const [password, setPassword] = useState('')
 
     const navigate = useNavigate()
 
     function handleSubmit(e){
         e.preventDefault();
-        axios.post('http://localhost:3001/login',{email,password})
+        axios.post('/api/auth/login',{email,password})
         .then(result => {
-          console.log(result)
-          if(result.data === 'success'){
+          if(result.data?.success){
             navigate('/home')
           }
-          
         })
         .catch(err => console.log(err))
-
     }
-
-
-
-
 
   return (
     <div className="d-flex justify-content-center align-items-center bg-secondary vh-100">
       <div className="bg-white p-3 rounded w-25">
         <h2>Login</h2>
         <form onSubmit={handleSubmit}>
-          
-
           <div className="mb-3">
             <label htmlFor="email">
               <strong>Email</strong>
@@ -72,13 +62,11 @@ function Login() {
         </form>
           <p>Don't Have an Account</p>
           <Link to='/' className="btn btn-default border w-100 bg-light rounded-0 text-decoration-none">
-            Signp
+            Signup
           </Link>
-        
       </div>
     </div>
   );
 }
-
 
 export default Login

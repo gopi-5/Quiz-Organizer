@@ -1,16 +1,15 @@
 import React from "react";
+import { Link } from 'react-router-dom'
 import './find.css'
 const Find = () => {
   return (
     <>
       <div className="na">
-        <a href="">logo</a>
-        <a href="first.html">Home</a>
+        <Link to="/home">logo</Link>
+        <Link to="/home">Home</Link>
         <a href="">about</a>
         <a href="">contact</a>
-        <a className="sign" href="">
-          sign up
-        </a>
+        <Link className="sign" to="/">sign up</Link>
       </div>
 
       <div className="con">
@@ -85,19 +84,19 @@ const Find = () => {
               <h3>Quick Links</h3>
               <ul className="list">
                 <li>
-                  <a href="">Home</a>
+                  <Link to="/home">Home</Link>
                 </li>
                 <li>
-                  <a href="">About</a>
+                  <a href="#">About</a>
                 </li>
                 <li>
-                  <a href="">Services</a>
+                  <a href="#">Services</a>
                 </li>
                 <li>
-                  <a href="">Products</a>
+                  <a href="#">Products</a>
                 </li>
                 <li>
-                  <a href="">Contact</a>
+                  <a href="#">Contact</a>
                 </li>
               </ul>
             </div>
@@ -106,22 +105,22 @@ const Find = () => {
               <h3>Follow Us</h3>
               <ul className="social-icons">
                 <li>
-                  <a href="">
+                  <a href="#">
                     <i className="fab fa-facebook"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a href="#">
                     <i className="fab fa-twitter"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a href="#">
                     <i className="fab fa-instagram"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a href="#">
                     <i className="fab fa-linkedin"></i>
                   </a>
                 </li>

@@ -2,10 +2,14 @@ import React from "react";
 import './register.css';
 
 const Register = () => {
+  function handleSubmit(e) {
+    e.preventDefault();
+  }
+
   return (
     <div className="register-container">
       <h2>Registration Form</h2>
-      <form id="registerForm">
+      <form id="registerForm" onSubmit={handleSubmit}>
         <label htmlFor="name">Team-Name:</label>
         <input type="text" id="name" name="name" required />
 

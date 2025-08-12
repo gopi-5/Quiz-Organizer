@@ -6,19 +6,17 @@ const Home = () => {
   return (
     <>
       <div className="na">
-        <a className="hello" href="#">
+        <Link className="hello" to="/home">
           <span className="hii">Quiz</span>Nest
-        </a>
-        <a href="#">Home</a>
+        </Link>
+        <Link to="/home">Home</Link>
         <a href="#d">Our Services</a>
-        <a href="1.html">Try me</a>
-        <a className="sign" href="sign_up.html">
-          sign up
-        </a>
+        <Link to="/find">Try me</Link>
+        <Link className="sign" to="/">sign up</Link>
       </div>
 
       <div id="con">
-        <video src="video.mp4" autoPlay loop muted className="bg"></video>
+        <video src="https://videos.pexels.com/video-files/8381237/8381237-uhd_3840_2160_25fps.mp4" autoPlay loop muted className="bg"></video>
         <div className="overlay">
           <div className="over1">
             <h1>Explore More..</h1>
@@ -35,7 +33,7 @@ const Home = () => {
         </div>
         <div className="z">
           <div className="card">
-            <img src="1.jpg" alt="" />
+            <img src="https://images.unsplash.com/photo-1519305120185-5f3b2a8f0b7b?q=80&w=1600&auto=format&fit=crop" alt="" />
             <div className="info">
               <h1>Registration Here</h1>
               <p>
@@ -49,7 +47,7 @@ const Home = () => {
           </div>
 
           <div className="card">
-            <img src="2.jpg" alt="" />
+            <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?q=80&w=1600&auto=format&fit=crop" alt="" />
             <div className="info">
               <h1>Find Quiz</h1>
               <p>
@@ -77,7 +75,7 @@ const Home = () => {
               <h3>Quick Links</h3>
               <ul className="list">
                 <li>
-                  <a href="#">Home</a>
+                  <Link to="/home">Home</Link>
                 </li>
                 <li>
                   <a href="#">About</a>
